@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>{{content.metadata.title}}</title>
+</head>
+<body>
+  <header>
+    <h1>{{content.metadata.title}}</h1>
+    <h2>{{content.metadata.subtitle}}</h2>
+  </header>
+  <div class="posts">
+    {% for post in content.posts %}
+      <article class="post">
+      {{ post }}
+      </article>
+    {% endfor %}
+  </div>
+</body>
+</html>

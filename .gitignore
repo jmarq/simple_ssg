@@ -1,0 +1,5 @@
+output/*
+site_source/images/*
+site_source/posts.ssg
+*.pyc
+TODO.txt
