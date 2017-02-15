@@ -7,7 +7,7 @@ def read_sourcefile(filename):
   infile.close()
   return infile_content 
 
-
+# read the metadata key/value pairs that come from the first chunk of the posts file
 def parse_metadata(metadata_blob):
   stripped_metadata = metadata_blob.strip()
   metadata_lines = stripped_metadata.split("\n")
@@ -34,7 +34,7 @@ def split_source_blob(source_blob):
   return result_dict
   
 
-#strip individual posts
+# strip individual posts of surrounding whitespace
 def strip_post_list(post_list):
   stripped_posts = []
   for post in post_list:
@@ -49,6 +49,8 @@ def convert_md_post_list(md_post_list):
     html_posts.append(post_html)
   return html_posts
 
+# this represents the main functionality of this file.
+# uses the posts file to create the object that will be rendered by the jinja2 template
 def sourcefile_to_dict(filename="site_source/posts.ssg"):
   source_content = read_sourcefile(filename)
   split_content = split_source_blob(source_content)
