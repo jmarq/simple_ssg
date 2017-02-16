@@ -1,0 +1,17 @@
+title::: hello world!
+subtitle::: made with a simple static site generator
+
+!!post!!
+
+#hello
+this is a post *using markdown*
+
+1. one
+2. two
+3. three
+
+!!post!!
+
+#hi!
+this is another post
+
