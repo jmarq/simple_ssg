@@ -2,4 +2,5 @@ output/*
 site_source/images/*
 site_source/posts.ssg
 *.pyc
+*.swp
 TODO.txt
