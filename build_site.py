@@ -37,6 +37,8 @@ def copy_static():
       print cmd
       call(cmd)
 
+
+
 if __name__ == "__main__":
     refresh_output_dir()
     render_index()
